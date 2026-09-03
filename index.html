@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>My Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     /* page font + background and default text color */
     body {
+      margin: 0;
       font-family: "Times New Roman", Times, serif;
       background-color: #f5f3ee; /* light warm background (hex) */
       color: #222222;            /* default text color (hex) */
+      line-height: 1.5;
+    }
+
+    /* simple page container */
+    .content {
+      max-width: 900px;
+      margin: 1.25rem auto;
+      padding: 0 1rem;
     }
 
     /* headings and paragraph colors */
-    h1 {
-      color: #6b0f0f; /* dark red for heading */
-    }
-    p {
-      color: #333333; /* slightly lighter for paragraphs */
-    }
+    h1 { color: #6b0f0f; }
+    p  { color: #333333; }
 
     /* link color */
-    a {
-      color: #1a73e8; /* blue links */
-    }
+    a { color: #1a73e8; }
 
     /* a utility class you can apply to elements */
     .highlight {
@@ -37,90 +41,94 @@
       background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
       padding: 1.5rem;
     }
+
     /* Simple static nav */
-.site-nav {
-  background: #ffffff;
-  border-bottom: 1px solid #e0ded9;
-}
-.nav-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.6rem 1rem;
-}
-.brand {
-  font-weight: 700;
-  color: #6b0f0f;
-  text-decoration: none;
-  font-size: 1.05rem;
-}
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-.nav-links a {
-  color: #1a1a1a;
-  text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-}
-.nav-links a:hover,
-.nav-links a:focus {
-  background: #fff3f3;
-  color: #6b0f0f;
-  outline: none;
-}
-.nav-links .active {
-  color: #6b0f0f;
-  font-weight: 600;
-}
-</style>
+    .site-nav {
+      background: #ffffff;
+      border-bottom: 1px solid #e0ded9;
+    }
+    .nav-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.6rem 1rem;
+    }
+    .brand {
+      font-weight: 700;
+      color: #6b0f0f;
+      text-decoration: none;
+      font-size: 1.05rem;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+    .nav-links a {
+      color: #1a1a1a;
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+    .nav-links a:hover,
+    .nav-links a:focus {
+      background: #fff3f3;
+      color: #6b0f0f;
+      outline: none;
+    }
+    .nav-links .active {
+      color: #6b0f0f;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
   <nav class="site-nav" role="navigation" aria-label="Primary">
-  <div class="nav-inner">
-    <a class="brand" href="index.html">My Site</a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">My Site</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h1>Riley Groebs</h1>
+    <h2>Information Systems Student</h2>
+    <h3>University of Utah</h3>
+
+    <h3>About Me</h3>
+    <p>I am a student interested in interior design, business technology, and creativity. I enjoy problem-solving, working with others, and creating new ideas. I am exploring responsible AI use and the bridge between AI and human interaction. My technical interests include digital visualization and AI-assisted business solutions.</p>
+
+    <h3>Skills</h3>
+    <ul>
+      <li>Microsoft Excel</li>
+      <li>Microsoft Word</li>
+      <li>Data Analytics</li>
     </ul>
-  </div>
-</nav>
-  <h1>Riley Groebs</h1>
-  <h2>Information Systems Student</h2>
-  <h3>University of Utah</h3>
 
-  <h3>About Me</h3>
-  <p>I am an Management student interested in interior design, business technology, and creativity. I enjoy problem-solving, working with others, and creating new ideas. I am looking into responsible AI use and the bridge between AI and human interaction. My technical interests include digital visualization and using AI-assisted business solutions. </p>
+    <h3>Projects</h3>
+    <ul>
+      <li>AI Business Analysis: Analyze business data using ChatGPT</li>
+      <li>Data Visualization: Dashboard built with Tableau</li>
+      <li>Web Development: Responsive Bootstrap website</li>
+      <li>Process Improvement: AI-assisted business workflow redesign</li>
+    </ul>
 
-  <h3>Skills</h3>
-  <ul>
-    <li>Microsoft Excel</li>
-    <li>Microsoft Word</li>
-    <li>Data Analytics</li>
-  </ul>
+    <h3>Resume</h3>
+    <p>Resume coming soon.</p>
 
-  <h3>Projects</h3>
-  <ul>
-    <li>AI Business Analysis:	Analyze business data using ChatGPT</li>
-    <li>Data Visualization:	Dashboard built with Tableau</li>
-    <li>Web Development:	Responsive Bootstrap website</li>
-    <li>Process Improvement:	AI-assisted business workflow redesign</li>
-  </ul>
-
-  <h3>Resume</h3>
-  <p> Resume Coming Soon</p>
-
-  <h3>Contact</h3>
-  <p>Email: u1422437@umail.utah.edu</p>
-  <p> GitHub Profile: rgroebs.github.io</p>
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:u1422437@umail.utah.edu">u1422437@umail.utah.edu</a></p>
+    <p>GitHub Profile: <a href="https://github.com/rgroebs" target="_blank" rel="noopener">github.com/rgroebs</a></p>
+  </main>
 </body>
 </html>
